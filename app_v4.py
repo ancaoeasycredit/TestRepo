@@ -18,7 +18,7 @@ app = Flask(__name__)
 CORS(app,resources={r"/pcbmodel/*": {"origins": "*"}})
 
 
-@app.route('/postDataJson',methods = ['POST'])
+@app.route('/post',methods = ['POST'])
 def success():
   #check methos
    if request.method == 'POST':
